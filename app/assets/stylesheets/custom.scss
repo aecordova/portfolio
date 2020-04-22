@@ -138,14 +138,17 @@ body {
             width: 100%;
 
             h3 {
-              margin: 1rem 0;
-              text-align: center;
+              margin: .5rem 0;
+            }
+            h4 {
+              margin: 0;
+              font-size: 1.2rem;
             }
 
             p {
               text-align: justify;
-              height: 145px;
-              max-height: 145px;
+              height: 110px;
+              max-height: 110px;
               overflow: hidden;
               text-overflow: ellipsis;
             }
@@ -156,20 +159,26 @@ body {
               li {
                 padding: 0 5px;
                 list-style-type: none;
+                font-size: smaller;
+                white-space: nowrap;
               }
             }
             .buttons {
               text-align: right;
-              button {
+              a {
                 background-color: transparent;
                 border: 1px solid black;
                 border-radius: 25px;
+                padding: 3px;
+                font-size: x-small;
               }
             }
           }
           .project-img {
             padding-right: 5px;
             border-radius: 20px;
+            height: 300px;
+            width: 300px;
           }
         }
       }
