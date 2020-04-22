@@ -1,60 +1,79 @@
+
+$txt-normal: #080708;
+$txt-title:#3d2645;
+// $txt-subtitle:
+$txt-link: #3d2645;
+// $txt-vislink:
+$backgnd: #e2efde;
+$sec: #342e37;
+
+h1 {
+  font-size: 3rem;
+  color: $txt-title;
+}
+
+h2 {
+  text-align: center;
+  color: $txt-title;
+  font-size: 2.3rem;
+}
+
+h3 {
+  font-size: 1.8rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: $txt-link;
+
+  :hover {
+    font-weight: 600;
+  }
+}
+
+li {
+  list-style-type: none;
+  font-size: larger;
+}
+
 body {
   font-family: 'Roboto Mono', monospace;
+  
+  background-color: $backgnd;
+  color: $txt-normal;
+  margin: 0;
+  
   display: grid;
   grid-template-columns: [pad-lft]10% [main]auto [pad-rgt]10%;
   grid-template-rows: [hdr]50px [main]auto [proj]auto [footer]50px;
 
-  h1 {
-    font-size: 3rem;
-  }
-
-  h2 {
-    text-align: center;
-    font-size: 2.3rem;
-  }
-
-  h3 {
-    font-size: 1.8rem;
-  }
-
-  h4 {
-    font-size: 1.5rem;
-  }
-
-  a {
-    text-decoration: none;
-
-    :hover {
-      font-weight: 600;
-    }
-  }
-
-  li {
-    list-style-type: none;
-    font-size: larger;
-  }
 
   header {
     grid-column-start: main;
-    height: 50px;
-    padding-bottom: 5px;
-
-    // background-color: #002451;
     nav {
       display: grid;
-      grid-template-columns: repeat(1fr,3);
-      padding: 0 5%;
-
+      grid-template-columns: 1fr 1fr 1fr; 
+      position: fixed;
+      left: 10%;
+      right: 10%;
+      height: 70px;
+      background: $backgnd;
       .brand-name{
         grid-column: 1;
         align-self: center;
+        justify-self: center;
         font-weight: bold;
         font-size: 2rem;
+        white-space: nowrap;
       }
       ul {
-        grid-column: 2;
+        grid-column: 3;
         align-self: center;
-        justify-self: end;
+        justify-self: center;
         padding: 0;
         display: flex;
 
@@ -75,42 +94,41 @@ body {
 
   main {
     grid-column-start: main;
-    margin-top: 10px;
-
     .cover {
       display: grid;
-      grid-template-columns: repeat(1fr, 3);     
+      grid-template-columns: 1fr 1fr 1fr;
+      margin-top: 24px;
+      border-radius: 20px;
+      background-color: $sec;
+      color: $backgnd;
       padding: 3%;
-      height: 380px;
 
+      // height: 380px;
       .cvr-head {
         grid-column: 1;
         align-self: center;
         font-family: 'Roboto Mono', monospace;
         // font-family: 'Source Code Pro', monospace;
-        li {
-          padding-left: 0;
-        }
-        h1 {
-          padding-left: 25px;
-          text-align: center;
-        }
         .photo{
           grid-column: 1;
           text-align: center;
           img{
+            border: 3px solid $txt-normal;
             border-radius: 100%;
+            width: 320px;
+            height: 320px;
           }
         }
       }
 
       p {
-        grid-column: 2;
+        grid-column: 2 / -1;
         text-align: justify;
         align-self: center;
         margin: 0;
+        padding-left: 15px;
         line-height: 2rem;
-        padding-left: 5%;
+        font-size: larger;
       }
     }
 
@@ -144,7 +162,6 @@ body {
               margin: 0;
               font-size: 1.2rem;
             }
-
             p {
               text-align: justify;
               height: 110px;
@@ -167,10 +184,18 @@ body {
               text-align: right;
               a {
                 background-color: transparent;
-                border: 1px solid black;
+                border: 1px solid $txt-link;
                 border-radius: 25px;
-                padding: 3px;
-                font-size: x-small;
+                padding: 3px 10px;
+                font-size:small;
+              }
+              :hover {
+                background-color: $txt-link;
+                color: whitesmoke;
+                border-width: 1.3px;
+                font-weight: bolder;
+                transition-duration: .2s;
+                transition-timing-function: ease-in;
               }
             }
           }
@@ -202,11 +227,8 @@ body {
         justify-content: center;
         align-self: center;
         margin-top: 0;
-        a{
+        a {
           padding-right: 2rem;
-          li{
-            // list-style-type: none;
-          }
         }
       }
 
@@ -214,7 +236,8 @@ body {
   }
   footer {
     margin-top: 50px;
-    grid-column-start: main;
+    grid-column: main;
+    grid-row-start: 6;
     display: grid;
     grid-template-columns: 5% auto 5%;
     p{

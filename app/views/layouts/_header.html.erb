@@ -1,8 +1,9 @@
 <%= content_tag :nav, '' do %>
-  <%= link_to '[ Angel Cordova ]', "#", class:"brand-name" %>
+  <%= link_to '[ Angel Cordova ]', root_path, class:"brand-name" %>
   <%= content_tag :ul, '' do %>
-    <%= link_to(tag.li("[projects]"), '#') %>
-    <%= link_to(tag.li("[contact]"), '#') %>
+    <%= link_to(tag.li("[projects]"), '#projects') %>
+    <%= link_to(tag.li("[contact]"), '#contact') %>
+    <%= link_to(tag.li("[resumé]"), 'https://1drv.ms/b/s!ApbFs4fSbcOEkkoryxco3_OBmqaX?e=9SSxei', target:'_blank') %>
   <% end %>
 <% end %>
 
