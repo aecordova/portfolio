@@ -78,7 +78,7 @@ body {
         display: flex;
 
         a {
-          padding-right: 5em;
+          padding-right: 2rem;
           li {
             // color: #FFC58F; 
             // color: #FF9DA4;
@@ -97,7 +97,7 @@ body {
     .cover {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
-      margin-top: 24px;
+      margin-top: 45px;
       border-radius: 20px;
       background-color: $sec;
       color: $backgnd;
