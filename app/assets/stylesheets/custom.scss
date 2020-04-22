@@ -139,6 +139,7 @@ body {
 
             h3 {
               margin: 1rem 0;
+              text-align: center;
             }
 
             p {
@@ -183,6 +184,8 @@ body {
       }
       p{
         grid-column: 2;
+        text-align: center;
+        font-size: larger;
       }
       ul {
         grid-column: 2;
