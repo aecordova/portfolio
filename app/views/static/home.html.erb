@@ -1,13 +1,13 @@
 <section class = "cover-section">
   <div class= "cover-photo-container">
     <div class="cover-photo-name">
-      <%= link_to tag.h1('[ Angel Cordova ]'), root_path%>
+      <%= link_to tag.h1('[Angel Cordova]'), root_path%>
     </div>
     <div class="cover-photo">
       <%= image_tag  "profile_pic.jpg" %>
     </div>
   </div>
-  <p>
+  <p class= "cover-description">
     Husband, Father of three awesome kids, Texas Hold'em enthusiast and <b>Full Stack Developer</b><br>
     After more than 13 years performing IT Service Operation roles such as Incident, Problem, Request, Change and Project Management and several management positions in Support Oriented organizations, I decided to retake on my passion for developing effective and high quality solutions to people's problems using a keyboard, a text editor and <b>Ruby on Rails. </b> </p>
 </section>
@@ -15,12 +15,14 @@
   <h2 id="projects">[Projects]</h2>
   <div class="projects">
     <div class="project">
-      <img src="https://via.placeholder.com/300" alt="" class="project-img">
+      <div  class="project-img-container">
+        <img src="https://via.placeholder.com/300" alt="" class="project-img">
+      </div>
       <div class="project-info">
         <h3 class="project-title">SayIt!</h3>
         <h4 class="project-subtitle">A micropost twitter-like platform</h4>
         <p class="project-description">The purpose of this project is to practice Rails acquired knowledge by building an app called SayIt Where a user can Sign in, share, read, like or comment Posts and follow users to see their posts in this timeline.</p>
-        <ul class="project-skills">
+        <ul class="project-skills lg-only">
           <li class="skill-item">[HTML5/CSS3/SASS]</li>
           <li class="skill-item">[AWS S3]</li>
           <li class="skill-item">[POSTGRESS]</li>
@@ -29,93 +31,140 @@
           <li class="skill-item">[RSPEC]</li>
           <li class="skill-item">[CAPYBARA]</li>
         </ul>
-        <div class="project-buttons">
-          <a>Live</a>
-          <a href = "https://github.com/aecordova/capstone-rails-twitter" target="_blank">GitHub</a>
+        <div class="project-buttons lg-only">
+          <a>live</a>
+          <a href = "https://github.com/aecordova/capstone-rails-twitter" target="_blank">github</a>
         </div>
+      </div>
+      <ul class="project-skills mob-only">
+        <li class="skill-item">[HTML5/CSS3/SASS]</li>
+        <li class="skill-item">[AWS S3]</li>
+        <li class="skill-item">[POSTGRESS]</li>
+        <li class="skill-item">[RUBY ON RAILS]</li>
+        <li class="skill-item">[JQUERY]</li>
+        <li class="skill-item">[RSPEC]</li>
+        <li class="skill-item">[CAPYBARA]</li>
+      </ul>
+      <div class="project-buttons mob-only">
+        <a>live</a>
+        <a href = "https://github.com/aecordova/capstone-rails-twitter" target="_blank">github</a>
       </div>
     </div>
     <div class="project">
-            <img src="https://via.placeholder.com/300" alt="" class="project-img">
+      <div  class="project-img-container">
+        <img src="https://via.placeholder.com/300" alt="" class="project-img">
+      </div>
       <div class="project-info">
         <h3 class="project-title">Private Events</h3>
         <h4 class="project-subtitle">An Event organization platform</h4>
         <p class="project-description">This is an app similar to EventBrite (at a very basic level) Where a user can organize events and record all the related information about it, also, signed in users can see other events and register to them</p>
-        <ul class="project-skills">
+        <ul class="project-skills lg-only">
           <li class="skill-item">[HTML5/CSS3/SASS]</li>
           <li class="skill-item">[BOOTSTRAP4]</li>
           <li class="skill-item">[RUBY ON RAILS]</li>
           <li class="skill-item">[RSPEC]</li>
           <li class="skill-item">[CAPYBARA]</li>
         </ul>
-        <div class="project-buttons">
-          <a>Live</a>
-          <a href = "https://github.com/aecordova/rails-private-events" target="_blank">GitHub</a>
+        <div class="project-buttons lg-only">
+          <a>live</a>
+          <a href = "https://github.com/aecordova/rails-private-events" target="_blank">github</a>
         </div>
+      </div>
+      <ul class="project-skills mob-only">
+        <li class="skill-item">[HTML5/CSS3/SASS]</li>
+        <li class="skill-item">[BOOTSTRAP4]</li>
+        <li class="skill-item">[RUBY ON RAILS]</li>
+        <li class="skill-item">[RSPEC]</li>
+        <li class="skill-item">[CAPYBARA]</li>
+      </ul>
+      <div class="project-buttons mob-only">
+        <a>live</a>
+        <a href = "https://github.com/aecordova/rails-private-events" target="_blank">github</a>
       </div>
     </div>
     <div class="project">
-            <img src="https://via.placeholder.com/300" alt="" class="project-img">
+      <div  class="project-img-container">
+        <img src="https://via.placeholder.com/300" alt="" class="project-img">
+      </div>
       <div class="project-info">
         <h3 class="project-title">Tic Tac Toe</h3>
         <h4 class="project-subtitle">The classical game for the command line interface</h4>
         <p class="project-description">The purpose of this project is to demonstrate knowledge in Ruby and testing with RSpec, despite being made for the command line, this project has a visual interface that renders the board as you pick your move! </p>
-        <ul class="project-skills">
+        <ul class="project-skills lg-only">
           <li class="skill-item">[RUBY 2.7]</li>
           <li class="skill-item">[RSPEC]</li>
         </ul>
-        <div class="project-buttons">
-          <a>Live</a>
-          <a href = "https://github.com/aecordova/proj-11-ruby-tictactoe" target="_blank">GitHub</a>
+        <div class="project-buttons lg-only">
+          <a>live</a>
+          <a href = "https://github.com/aecordova/proj-11-ruby-tictactoe" target="_blank">github</a>
         </div>
+      </div>
+      <ul class="project-skills mob-only">
+        <li class="skill-item">[RUBY 2.7]</li>
+        <li class="skill-item">[RSPEC]</li>
+      </ul>
+      <div class="project-buttons mob-only">
+        <a>live</a>
+        <a href = "https://github.com/aecordova/proj-11-ruby-tictactoe" target="_blank">github</a>
       </div>
     </div>
     <div class="project">
-            <img src="https://via.placeholder.com/300" alt="" class="project-img">
+      <div  class="project-img-container">
+        <img src="https://via.placeholder.com/300" alt="" class="project-img">
+      </div>
       <div class="project-info">
         <h3 class="project-title">NewsWeek Clone</h3>
         <h4 class="project-subtitle">Responsive application layout built with Bootstrap</h4>
         <p class="project-description">The purpose of this project was to build a webpage from scratch replicating Newsweeks' and replicating its responsive behaviour using bootstrap. The projects requirement and an extended description can be found at The Odin Project</p>
-        <ul class="project-skills">
+        <ul class="project-skills lg-only">
           <li class="skill-item">[HTML5/CSS3]</li>
           <li class="skill-item">[BOOTSTRAP4]</li>
         </ul>
-        <div class="project-buttons">
-          <a href="https://rawcdn.githack.com/aecordova/proj7-newsweek-clone/0cf549a439636a31d29b846d69f0154020504639/index.html" target="_blank">Live</a>
-          <a href = "https://github.com/aecordova/proj7-newsweek-clone" target="_blank">GitHub</a>
+        <div class="project-buttons lg-only">
+          <a href="https://rawcdn.githack.com/aecordova/proj7-newsweek-clone/0cf549a439636a31d29b846d69f0154020504639/index.html" target="_blank">live</a>
+          <a href = "https://github.com/aecordova/proj7-newsweek-clone" target="_blank">github</a>
         </div>
+      </div>
+      <ul class="project-skills mob-only">
+        <li class="skill-item">[HTML5/CSS3]</li>
+        <li class="skill-item">[BOOTSTRAP4]</li>
+      </ul>
+      <div class="project-buttons mob-only">
+        <a href="https://rawcdn.githack.com/aecordova/proj7-newsweek-clone/0cf549a439636a31d29b846d69f0154020504639/index.html" target="_blank">live</a>
+        <a href = "https://github.com/aecordova/proj7-newsweek-clone" target="_blank">github</a>
       </div>
     </div>
   </div>
 </section>
 <section class= "contact-section">
   <h2 id="contact">[Contact]</h2>
-  <p class="call-to-act"> Do you have a really cool project? <br> <b>Let's talk!</b></p>
+  <p class="call-to-act"> Do you have a really cool project? <br>
+    <b>Let's talk!</b></p>
   <ul class="contact-list">
     <a class="contact-link" href="https://wa.me/528121019972?text= Hey!%20I%20saw%20your%20portfolio%20and%20I%20want%20to%20have%20sa%20word%20with%20you!">
       <li>
-      <i class="fa fa-whatsapp"></i>
-      [whatsapp]</li>
+        <i class="fa fa-whatsapp"></i>
+        [whatsapp]</li>
     </a>
     <a class="contact-link" href="https://twitter.com/ae_cordova">
       <li>
-      <i class="fa fa-twitter"></i>
-      [twitter]</li>
+        <i class="fa fa-twitter"></i>
+        [twitter]</li>
     </a>
     <a class="contact-link" href="https://github.com/aecordova">
-    <li>
-    <i class="fa fa-github"></i>
-    [github]</li>
+      <li>
+        <i class="fa fa-github"></i>
+        [github]</li>
     </a>
     <a class="contact-link" href="https://www.linkedin.com/in/ae-cordova/">
-    <li>
-    <i class="fa fa-linkedin"></i>
-    [linkedin]</li>
+      <li>
+        <i class="fa fa-linkedin"></i>
+        [linkedin]</li>
     </a>
     <a class="contact-link" href="mailto:ae_cordova@outlook.com">
-    <li>
-    <i class="fa fa-envelope-o"></i>
-    [email]</li>
+      <li>
+        <i class="fa fa-envelope-o"></i>
+        [email]</li>
     </a>
   </ul>
 </section>
